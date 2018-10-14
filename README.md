@@ -28,4 +28,4 @@
 
 ## Screenshot
 
-![](.github/apple-homkit-352air-screenshot.png)
+![](https://github.com/mckelvin/homebridge-352air/raw/master/.github/apple-homekit-352air-screenshot.png)
