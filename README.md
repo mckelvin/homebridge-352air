@@ -5,6 +5,13 @@
 - [352 PM2.5 检测仪](http://www.352air.com/jianceyi1/index.html)
 
 
+## Installation
+
+```
+sudo npm install -g homebridge-352air
+```
+
+
 ## Example config
 
 ```json
