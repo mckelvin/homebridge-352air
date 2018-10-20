@@ -111,15 +111,20 @@ The352AirQuality.prototype = {
           var quality = Characteristic.AirQuality.UNKNOWN;
           if (this.result) {
             density = this.result.pm25;
-            if (density <= 5) {
+            if (density <= 11) {
+              // 0 ~ 11
               quality = Characteristic.AirQuality.EXCELLENT;
-            }else if (density <= 12) {
-              quality = Characteristic.AirQuality.GOOD;
             }else if (density <= 35) {
-              quality = Characteristic.AirQuality.FAIR;
+              // 12 ~ 35
+              quality = Characteristic.AirQuality.GOOD;
             }else if (density <= 55) {
+              // 36 ~ 55
+              quality = Characteristic.AirQuality.FAIR;
+            }else if (density <= 150) {
+              // 56 ~ 150
               quality = Characteristic.AirQuality.INFERIOR;
-            }else {
+            } else {
+              // 151 ~ 500
               quality = Characteristic.AirQuality.POOR;
             }
           }
